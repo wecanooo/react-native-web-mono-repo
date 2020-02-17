@@ -142,6 +142,51 @@
 
 - [ ] React Native Web 프로젝트 생성
 
-  - [ ] CRA 로 React Project 생성
-  - [ ] Typescript 적용
-  - [ ] common package 의 App 을 호출
+  - [ ] CRA 로 React Project 생성 `$ cd packages && npx create-react-app web`
+  - [ ] React Native Web 관련 패키지 설치 `$ yarn add react-native-web react-art`
+  - [ ] Typescript 패키지 설치 `$ yarn add -D typescript @types/react-native @types/react @types/react-dom`
+  - [ ] tsconfig.json 설정 `$ tsc --init`
+
+  ```json
+  {
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "typeRoots": ["@types", "../../node_modules/@types"]
+    },
+    "include": ["src"],
+    "references": [
+      {
+        "path": "../components"
+      }
+    ]
+  }
+  ```
+
+  - [ ] package.json 에 common 패키지 추가
+
+  ```json
+  {
+    "dependencies": {
+      ...
+      "@cosmos/common": "0.0.1",
+      ...
+    }
+  }
+  ```
+
+  - [ ] src 폴더 재설치 `$ rm -rf src`, `packages/web/src/index.tsx` 파일 생성
+
+  ```tsx
+  import { AppRegistry } from 'react-native'
+
+  import { App } from '@cosmos/common'
+
+  AppRegistry.registerComponent('cosmos', () => App)
+  AppRegistry.runApplication('cosmos', {
+    rootTag: document.getElementById('root'),
+  })
+  ```
+
+  - [ ] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
