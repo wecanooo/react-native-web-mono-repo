@@ -2,7 +2,25 @@
 
 [Expo](https://expo.io/) 33.0 이상의 버전을 이용하면 React Native Web 이 built-in 되어 있어서 편하게 모바일과 웹 개발을 동시에 할 수 있지만, Expo 를 이용하게 되면 발생되는 [Limitation](https://docs.expo.io/versions/latest/introduction/why-not-expo/) 때문에 [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) 를 이용하여 Mono Repo 를 구성하고자 합니다.
 
-### 사용되는 기술들
+### Install
+
+이 프로젝트에서는 react 16.12.0, react-native 0.61.5 를 사용합니다.
+
+- `$ git clone https://github.com/wecanooo/react-native-web-mono-repo.git`
+- `$ cd react-native-web-mono-repo`
+- `$ yarn`
+- `$ cd packages/mobile/ios`
+- `$ pod install`
+- `$ cd -`
+- `$ yarn workspace web start`
+- `$ yarn workspace common watch`
+- `$ yarn workspace mobile start`
+- `$ yarn workspace ios` 또는 `$ yarn workspace android`
+
+ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지 않습니다.
+아래 Step by Step 섹션에서는 이 프로젝트를 만들어가는 과정에 대해서 다른 내용입니다.
+
+### Step by Step
 
 이 프로젝트에서는 다음과 같은 기술들이 사용됩니다.
 
