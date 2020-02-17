@@ -438,7 +438,7 @@
         "signature": "5d97cd259f2bbcb747b56433aae07d35b5a75c45f08102cd9ad90a4938e21b5d"
       },
       "./src/index.tsx": {
-        "version": "19988057222b8466bc8d415635e78687ed469b51b8662152c24a24fd5b8f33e4",
+        "version": "b5dd13d4e2a4ab7e594480cebdc43a393de2d5443113c3d1941c8d7d56f6efd0",
         "signature": "de3b9d76e15a5feb3788c7d86605790e8e3d052287ae9289d5bd750043f65b8a"
       },
       "../../node_modules/@babel/types/lib/index.d.ts": {
