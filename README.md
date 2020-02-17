@@ -75,7 +75,7 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
   };
   ```
 
-  - [x] `$ open packages/mobile/ios/myprojectname.xcodeproj/` 수행 후 `AppDelegate.m` 파일의 `jsBundleURLForBundleRoot:@"index"` 파일의 `index` 부분을 `packages/mobile/index` 로 변경
+  - [x] `$ open packages/mobile/ios/mobile.xcodeproj/` 수행 후 `AppDelegate.m` 파일의 `jsBundleURLForBundleRoot:@"index"` 파일의 `index` 부분을 `packages/mobile/index` 로 변경
   - [x] XCode 의 `Build Phases > Bundle React Native code and Images` 설정에 다음의 값으로 변경
 
   ```shell
