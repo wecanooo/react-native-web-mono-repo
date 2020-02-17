@@ -43,19 +43,19 @@
   - [x] `metro.config.js` 파일을 다음과 같이 변경
 
   ```javascript
-  const path = require('path')
+  const path = require("path");
 
   module.exports = {
-    projectRoot: path.resolve(__dirname, '../../'),
+    projectRoot: path.resolve(__dirname, "../../"),
     transformer: {
       getTransformOptions: async () => ({
         transform: {
           experimentalImportSupport: false,
-          inlineRequires: false,
-        },
-      }),
-    },
-  }
+          inlineRequires: false
+        }
+      })
+    }
+  };
   ```
 
   - [x] `$ open packages/mobile/ios/myprojectname.xcodeproj/` 수행 후 `AppDelegate.m` 파일의 `jsBundleURLForBundleRoot:@"index"` 파일의 `index` 부분을 `packages/mobile/index` 로 변경
@@ -179,28 +179,28 @@
   - [x] src 폴더 재설치 `$ rm -rf src`, `packages/web/src/index.tsx` 파일 생성
 
   ```tsx
-  import { AppRegistry } from 'react-native'
+  import { AppRegistry } from "react-native";
 
-  import { App } from '@cosmos/common'
+  import { App } from "@cosmos/common";
 
-  AppRegistry.registerComponent('cosmos', () => App)
-  AppRegistry.runApplication('cosmos', {
-    rootTag: document.getElementById('root'),
-  })
+  AppRegistry.registerComponent("cosmos", () => App);
+  AppRegistry.runApplication("cosmos", {
+    rootTag: document.getElementById("root")
+  });
   ```
 
   - [x] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
-
-- [ ] React Navigation 추가
-
-  - [ ] Bottom Tab Navigation 연동
-  - [ ] Stack Navigation 연동
 
 - [ ] Mobx 로 state 관리
 
   - [ ] useContext 와 mobx-react-lite 를 연동하여 store 관리
   - [ ] experimentalDecorators 적용을 위한 설정
   - [ ] observable, observer, action 연동
+
+- [ ] React Navigation 추가
+
+  - [ ] Bottom Tab Navigation 연동
+  - [ ] Stack Navigation 연동
 
 - [ ] API 연동
 
