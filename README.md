@@ -140,12 +140,12 @@
   }
   ```
 
-- [ ] React Native Web 프로젝트 생성
+- [x] React Native Web 프로젝트 생성
 
-  - [ ] CRA 로 React Project 생성 `$ cd packages && npx create-react-app web`
-  - [ ] React Native Web 관련 패키지 설치 `$ yarn add react-native-web react-art`
-  - [ ] Typescript 패키지 설치 `$ yarn add -D typescript @types/react-native @types/react @types/react-dom`
-  - [ ] tsconfig.json 설정 `$ tsc --init`
+  - [x] CRA 로 React Project 생성 `$ cd packages && npx create-react-app web`
+  - [x] React Native Web 관련 패키지 설치 `$ yarn add react-native-web react-art`
+  - [x] Typescript 패키지 설치 `$ yarn add -D typescript @types/react-native @types/react @types/react-dom`
+  - [x] tsconfig.json 설정 `$ tsc --init`
 
   ```json
   {
@@ -164,7 +164,7 @@
   }
   ```
 
-  - [ ] package.json 에 common 패키지 추가
+  - [x] package.json 에 common 패키지 추가
 
   ```json
   {
@@ -176,7 +176,7 @@
   }
   ```
 
-  - [ ] src 폴더 재설치 `$ rm -rf src`, `packages/web/src/index.tsx` 파일 생성
+  - [x] src 폴더 재설치 `$ rm -rf src`, `packages/web/src/index.tsx` 파일 생성
 
   ```tsx
   import { AppRegistry } from 'react-native'
@@ -189,4 +189,4 @@
   })
   ```
 
-  - [ ] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
+  - [x] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
