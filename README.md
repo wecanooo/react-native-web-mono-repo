@@ -32,9 +32,7 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
 - [Mobx Lite](https://github.com/mobxjs/mobx-react-lite)
 - [React Navigation](https://reactnavigation.org/)
 
-### TODO
-
-- [x] Mono Repo 프로젝트 생성
+* [x] Mono Repo 프로젝트 생성
 
   - [x] package.json 생성: `$ yarn init -y`
   - [x] tsconfig.json 생성: `$ tsc --init`
@@ -42,12 +40,12 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
   - [x] react-native 및 typescript 의존성 설정
   - [x] package.json 에 workspaces, scripts 설정
 
-- [x] Package 구성
+* [x] Package 구성
 
   - [x] `$ rm yarn.lock && rm -rf node_modules`
   - [x] `$ mkdir -p packages/common/src packages/mobile packages/web`
 
-- [x] [Mobile 프로젝트 생성](https://facebook.github.io/react-native/docs/getting-started)
+* [x] [Mobile 프로젝트 생성](https://facebook.github.io/react-native/docs/getting-started)
 
   - [x] `$ gem install cocoapods`
   - [x] `$ npx react-native init mobile`
@@ -56,7 +54,7 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
   - [x] Packages 내의 프로젝트 내부에 있는 node_modules 에 패키지가 설치되는 것이 아니라 Project Root 의 node_modules 에 설치가 되는 것을 확인해야 합니다.
   - [x] `$ yarn add -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer`
 
-- [x] Mono Repo 구성을 위한 React Native 프로젝트 튜닝 (for iOS)
+* [x] Mono Repo 구성을 위한 React Native 프로젝트 튜닝 (for iOS)
 
   - [x] 찾기 & 변경 기능을 통해 `../../node_modules/react-native/` 라고 되어 있는 값들을 모두 `../../../../node_modules/react-native/` 로 변경
   - [x] `metro.config.js` 파일을 다음과 같이 변경
@@ -91,7 +89,7 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
 
   ![Success](https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c50d21db5ea80e61165796175e894d59/rn.png)
 
-- [x] Mono Repo 구성을 위한 React Native 프로젝트 튜닝 (for Android)
+* [x] Mono Repo 구성을 위한 React Native 프로젝트 튜닝 (for Android)
 
   - [x] `packages/mobile/android/app/src/main/java/com/myprojectname/MainApplication.java` 파일의 `getJSMainModuleName` 함수의 내용을 `return "index";` 에서 `return "packages/mobile/index";` 로 변경
   - [x] `packages/mobile/android/app/build.gradle` 파일 내의 `project.ext.react =` 부분을 다음의 코드로 변경하고 `apply from:` 부분의 경로를 Project Root 로 설정
@@ -108,7 +106,7 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
 
   ![Success](https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c50d21db5ea80e61165796175e894d59/rn_2.png)
 
-- [x] Common Packages 와 코드 공유
+* [x] Common Packages 와 코드 공유
 
   - [x] 필요한 패키지 설치 `$ yarn add react react-native`, `$ yarn add -D typescript @types/react @types/react-native rimraf`
   - [x] package.json 생성: `$ yarn init -y`
@@ -159,7 +157,7 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
   }
   ```
 
-- [x] React Native Web 프로젝트 생성
+* [x] React Native Web 프로젝트 생성
 
   - [x] CRA 로 React Project 생성 `$ cd packages && npx create-react-app web`
   - [x] React Native Web 관련 패키지 설치 `$ yarn add react-native-web react-art`
@@ -210,7 +208,7 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
 
   - [x] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
 
-- [x] Mobx 로 state 관리
+* [x] Mobx 로 state 관리
 
   React Hook 을 이용하기 위해 mobx-react-lite 를 설치합니다.
 
@@ -219,11 +217,11 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
   - [x] experimentalDecorators 적용을 위한 설정
   - [x] observable, observer, action 연동
 
-- [ ] React Navigation 추가
+* [ ] React Navigation 추가
 
   - [ ] Bottom Tab Navigation 연동
   - [ ] Stack Navigation 연동
 
-- [ ] API 연동
+* [ ] API 연동
 
-- [ ] UI Template 제작
+* [ ] UI Template 제작
