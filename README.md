@@ -191,11 +191,14 @@
 
   - [x] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
 
-- [ ] Mobx 로 state 관리
+- [x] Mobx 로 state 관리
 
-  - [ ] useContext 와 mobx-react-lite 를 연동하여 store 관리
-  - [ ] experimentalDecorators 적용을 위한 설정
-  - [ ] observable, observer, action 연동
+  React Hook 을 이용하기 위해 mobx-react-lite 를 설치합니다.
+
+  - [x] mobx, mobx-react-lite 패키지 설치 `$ yarn add mobx mobx-react-lite`
+  - [x] useContext 와 mobx-react-lite 를 연동하여 store 관리
+  - [x] experimentalDecorators 적용을 위한 설정
+  - [x] observable, observer, action 연동
 
 - [ ] React Navigation 추가
 
