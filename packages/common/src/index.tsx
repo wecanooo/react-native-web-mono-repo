@@ -1,13 +1,13 @@
-import * as React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import * as React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
 export const App = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Hello, World</Text>
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: '100%',
   },
-})
+});
