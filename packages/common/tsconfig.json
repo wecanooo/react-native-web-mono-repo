@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    // "emitDeclarationOnly": true,
+    "isolatedModules": false,
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "typeRoots": ["@types", "../../node_modules/@types"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
