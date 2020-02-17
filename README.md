@@ -190,3 +190,18 @@
   ```
 
   - [x] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
+
+- [ ] React Navigation 추가
+
+  - [ ] Bottom Tab Navigation 연동
+  - [ ] Stack Navigation 연동
+
+- [ ] Mobx 로 state 관리
+
+  - [ ] useContext 와 mobx-react-lite 를 연동하여 store 관리
+  - [ ] experimentalDecorators 적용을 위한 설정
+  - [ ] observable, observer, action 연동
+
+- [ ] API 연동
+
+- [ ] UI Template 제작
