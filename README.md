@@ -18,7 +18,8 @@
 - `$ yarn workspace ios` 또는 `$ yarn workspace android`
 
 ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지 않습니다.
-아래 Step by Step 섹션에서는 이 프로젝트를 만들어가는 과정에 대해서 다른 내용입니다.
+
+아래 Step by Step 섹션은 이 프로젝트를 만들어가는 과정에 대해서 다른 내용입니다.
 
 ### Step by Step
 
