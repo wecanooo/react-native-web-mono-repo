@@ -193,6 +193,10 @@
         "version": "aef3e2bce21e405dd460a6bbf986eb7c9c2f2cdb02a4afc829e5b29334b79d6b",
         "signature": "aef3e2bce21e405dd460a6bbf986eb7c9c2f2cdb02a4afc829e5b29334b79d6b"
       },
+      "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts": {
+        "version": "e2b5f7eccbda7bf2d4071a097037627eb8d43a6f746e0928d2de598f76b9a6db",
+        "signature": "e2b5f7eccbda7bf2d4071a097037627eb8d43a6f746e0928d2de598f76b9a6db"
+      },
       "../../node_modules/mobx/lib/utils/utils.d.ts": {
         "version": "a262d84d7a0ec96e682f72e583745d76f6f03b990cb6503507924539c1fcbd33",
         "signature": "a262d84d7a0ec96e682f72e583745d76f6f03b990cb6503507924539c1fcbd33"
@@ -438,8 +442,20 @@
         "signature": "5d97cd259f2bbcb747b56433aae07d35b5a75c45f08102cd9ad90a4938e21b5d"
       },
       "./src/index.tsx": {
-        "version": "b5dd13d4e2a4ab7e594480cebdc43a393de2d5443113c3d1941c8d7d56f6efd0",
-        "signature": "de3b9d76e15a5feb3788c7d86605790e8e3d052287ae9289d5bd750043f65b8a"
+        "version": "c4ef47fb533ddaa4eebfe7475bc4d5ddc34e080871de6ab845c781d8f119f11e",
+        "signature": "60d1ef051ae7cffc2f4cabf52b059e06788df0d7f070ba36c502514b6c4dd7be"
+      },
+      "./src/navigators/bottomtabnavigator.tsx": {
+        "version": "60e459613ee694989bf38048c69a9b90ec947264df3fd35d18bae14bc4e742a6",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../../node_modules/react-navigation/typescript/react-navigation.d.ts": {
+        "version": "fd5eaa1f3be496aa273360aaa27ec443b8e4451f34365c3bfe6017ecdbfe88ba",
+        "signature": "fd5eaa1f3be496aa273360aaa27ec443b8e4451f34365c3bfe6017ecdbfe88ba"
+      },
+      "./src/utils/usenavigation.ts": {
+        "version": "2a0c6cbaee375bb6c6ef979c80535362e59756bca9fb2f3f7092a4982a6bc8f5",
+        "signature": "2f358e37738c7b573971592124b85bd39bac2d9cd3d99cfd5d9944b1eb6fb1de"
       },
       "../../node_modules/@babel/types/lib/index.d.ts": {
         "version": "b05f0003bcf151be87491c83a4ba37b561798f1282b92cedb3a4e75a0224eb85",
@@ -669,6 +685,10 @@
         "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
         "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee"
       },
+      "../../node_modules/@types/hammerjs/index.d.ts": {
+        "version": "e5c5e805c2e2696d62922f3e2c4742be28a0c729e88327e3222f89826d58b38c",
+        "signature": "e5c5e805c2e2696d62922f3e2c4742be28a0c729e88327e3222f89826d58b38c"
+      },
       "../../node_modules/@types/istanbul-lib-coverage/index.d.ts": {
         "version": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd",
         "signature": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd"
@@ -849,7 +869,6 @@
         "./@types",
         "../../node_modules/@types"
       ],
-      "watch": true,
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
@@ -1147,6 +1166,15 @@
         "../../node_modules/@types/react-native/batchedbridge.d.ts",
         "../../node_modules/@types/react-native/devtools.d.ts",
         "../../node_modules/@types/react-native/launchscreen.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts": [
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/@types/react-native/index.d.ts",
+        "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts",
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/ts3.5/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts",
@@ -1613,10 +1641,34 @@
         "../../node_modules/@types/node/ts3.5/util.d.ts"
       ],
       "./src/index.tsx": [
+        "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts",
         "../../node_modules/@types/react/index.d.ts",
         "../../node_modules/@types/react-native/index.d.ts",
         "./src/stores/counterstore.ts",
         "../../node_modules/mobx-react-lite/dist/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "./src/navigators/bottomtabnavigator.tsx": [
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../../node_modules/react-navigation/typescript/react-navigation.d.ts": [
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/@types/react-native/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "./src/utils/usenavigation.ts": [
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/react-navigation/typescript/react-navigation.d.ts",
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/ts3.5/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts",
@@ -2063,6 +2115,12 @@
         "../../node_modules/@types/node/events.d.ts",
         "../../node_modules/@types/minimatch/index.d.ts",
         "../../node_modules/@types/node/ts3.5/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../../node_modules/@types/hammerjs/index.d.ts": [
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/ts3.5/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts",
@@ -3099,7 +3157,19 @@
         "../../node_modules/@types/node/ts3.5/util.d.ts"
       ],
       "./src/index.tsx": [
+        "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts",
         "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../node_modules/react-navigation/typescript/react-navigation.d.ts": [
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/@types/react-native/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "./src/utils/usenavigation.ts": [
+        "../../node_modules/react-navigation/typescript/react-navigation.d.ts"
       ],
       "../../node_modules/@babel/types/lib/index.d.ts": [
         "../../node_modules/@types/node/fs.d.ts",
@@ -3547,6 +3617,12 @@
         "../../node_modules/@types/node/util.d.ts",
         "../../node_modules/@types/node/ts3.5/util.d.ts"
       ],
+      "../../node_modules/@types/hammerjs/index.d.ts": [
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
       "../../node_modules/@types/istanbul-lib-coverage/index.d.ts": [
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/ts3.5/fs.d.ts",
@@ -3820,6 +3896,15 @@
         "../../node_modules/@types/node/ts3.5/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts",
         "../../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts": [
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/@types/react-native/index.d.ts",
+        "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.5/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -3932,6 +4017,9 @@
       "../../node_modules/mobx-react-lite/dist/uselocalstore.d.ts",
       "../../node_modules/mobx-react-lite/dist/optimizescheduler.d.ts",
       "../../node_modules/mobx-react-lite/dist/index.d.ts",
+      "./src/navigators/bottomtabnavigator.tsx",
+      "../../node_modules/react-navigation/typescript/react-navigation.d.ts",
+      "./src/utils/usenavigation.ts",
       "../../node_modules/@babel/types/lib/index.d.ts",
       "../../node_modules/@types/babel__generator/index.d.ts",
       "../../node_modules/@types/babel__traverse/index.d.ts",
@@ -3989,6 +4077,7 @@
       "../../node_modules/@types/node/ts3.5/index.d.ts",
       "../../node_modules/@types/minimatch/index.d.ts",
       "../../node_modules/@types/glob/index.d.ts",
+      "../../node_modules/@types/hammerjs/index.d.ts",
       "../../node_modules/@types/istanbul-lib-coverage/index.d.ts",
       "../../node_modules/@types/istanbul-lib-report/index.d.ts",
       "../../node_modules/@types/istanbul-reports/index.d.ts",
@@ -4027,6 +4116,7 @@
       "../../node_modules/@types/testing-library__react/index.d.ts",
       "../../node_modules/@types/yargs-parser/index.d.ts",
       "../../node_modules/@types/yargs/index.d.ts",
+      "../../node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts",
       "./src/index.tsx"
     ]
   },

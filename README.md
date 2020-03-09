@@ -60,19 +60,19 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
   - [x] `metro.config.js` 파일을 다음과 같이 변경
 
   ```javascript
-  const path = require("path");
+  const path = require('path')
 
   module.exports = {
-    projectRoot: path.resolve(__dirname, "../../"),
+    projectRoot: path.resolve(__dirname, '../../'),
     transformer: {
       getTransformOptions: async () => ({
         transform: {
           experimentalImportSupport: false,
-          inlineRequires: false
-        }
-      })
-    }
-  };
+          inlineRequires: false,
+        },
+      }),
+    },
+  }
   ```
 
   - [x] `$ open packages/mobile/ios/mobile.xcodeproj/` 수행 후 `AppDelegate.m` 파일의 `jsBundleURLForBundleRoot:@"index"` 파일의 `index` 부분을 `packages/mobile/index` 로 변경
@@ -196,14 +196,14 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
   - [x] src 폴더 재설치 `$ rm -rf src`, `packages/web/src/index.tsx` 파일 생성
 
   ```tsx
-  import { AppRegistry } from "react-native";
+  import { AppRegistry } from 'react-native'
 
-  import { App } from "@cosmos/common";
+  import { App } from '@cosmos/common'
 
-  AppRegistry.registerComponent("cosmos", () => App);
-  AppRegistry.runApplication("cosmos", {
-    rootTag: document.getElementById("root")
-  });
+  AppRegistry.registerComponent('cosmos', () => App)
+  AppRegistry.runApplication('cosmos', {
+    rootTag: document.getElementById('root'),
+  })
   ```
 
   - [x] `$ yarn start` 실행하면 웹화면을 확인할 수 있음
@@ -219,8 +219,16 @@ ios emulator, android emulator 설치에 대한 내용은 여기에서 다루지
 
 * [ ] React Navigation 추가
 
-  - [ ] Bottom Tab Navigation 연동
-  - [ ] Stack Navigation 연동
+  React-Navigation [v4](https://reactnavigation.org/docs/en/4.x/getting-started.html) 를 기준으로 설명합니다. v5 는 많이 다르니 [v5 Documentation](https://reactnavigation.org/docs/en/getting-started.html) 을 참고하세요.
+
+  아래의 내용은 [how-to-do-navigation-react-native-web-in-2020](https://codersera.com/blog/how-to-do-navigation-in-react-native-web-in-2020/) 을 참고했습니다.
+
+  React-Native 0.60 이상의 버전에서는 `react-native link` 구문이 자동으로 수행되기 때문에 별도의 `link` 작업을 할 필요가 없습니다. [Autolinking](https://github.com/react-native-community/cli/blob/master/docs/autolinking.md) 참고
+
+  - [ ] 의존성 설치 `$ cd packages/common; yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/web`
+  - [ ] Mac OS X iOS 의 경우 `$ cd -; cd packages/mobile/ios; pod install; cd -; cd packages/common` 실행
+  - [ ] index.tsx 또는 App.tsx 와 같은 Entry file 의 상단에 `import 'react-native-gesture-handler';` 를 포함하여 화면 전환을 더욱 부드럽게 되도록 설정
+  - [ ] Stack Navigator 와 Bottom Tab Navigator 의존성 설치 `$ yarn add react-navigation-stack @react-native-community/masked-view react-navigation-tabs`
 
 * [ ] API 연동
 

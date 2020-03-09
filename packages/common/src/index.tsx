@@ -1,3 +1,5 @@
+import 'react-native-gesture-handler';
+
 import * as React from 'react';
 import { useContext } from 'react';
 import { View, Text, StyleSheet, Button, SafeAreaView } from 'react-native';
